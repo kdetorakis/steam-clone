@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Library from "./pages/Library";
 import GameDetails from "./pages/GameDetails";
 import Navbar from "./components/Navbar";
+import "./App.css";
 
 function App() {
   return (
