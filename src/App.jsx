@@ -4,6 +4,7 @@ import Library from "./pages/Library";
 import GameDetails from "./pages/GameDetails";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import "./index.css"; 
 
 function App() {
   return (
