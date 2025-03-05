@@ -1,0 +1,23 @@
+.game-details {
+    @apply bg-gray-800 p-8 rounded-lg shadow-lg max-w-3xl mx-auto text-white;
+  }
+  
+  .game-details img {
+    @apply w-full h-64 object-cover rounded-lg;
+  }
+  
+  .game-details h1 {
+    @apply text-3xl font-bold mt-4;
+  }
+  
+  .game-details p {
+    @apply text-lg text-gray-400 mt-2;
+  }
+  
+  .game-details .description {
+    @apply text-lg text-gray-300 mt-4;
+  }
+  
+  .game-details a {
+    @apply inline-block mt-6 text-blue-400 hover:underline;
+  }
