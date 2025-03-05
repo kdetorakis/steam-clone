@@ -25,7 +25,10 @@ function GameDetails() {
         <p>Release Date: {game.releaseDate}</p>
         <p>Platforms: {game.platforms.join(", ")}</p>
         <p className="description">{game.description}</p>
-        <a href="/library">← Back to Library</a>
+        <button className="primary-button mt-6">Add to Cart</button>
+        <a href="/library" className="block mt-4 text-[#66c0f4] hover:underline">
+          ← Back to Library
+        </a>
       </div>
     );
   }

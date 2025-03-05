@@ -4,46 +4,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 🔹 Apply a dark navy background */
+/* 🔹 Steam-like Dark Theme */
 body {
-  @apply bg-gray-900 text-white;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* 🔹 Header and Navbar */
 .header {
-  @apply bg-gray-950 shadow-lg;
+  @apply bg-[#171a21] shadow-lg py-4;
+}
+
+.navbar a {
+  @apply text-white hover:text-[#66c0f4] transition-all duration-300 px-4 py-2;
 }
 
 /* 🔹 Game Card Styling */
 .game-card {
-  @apply bg-gray-800 text-white rounded-lg shadow-md overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-blue-500/50;
+  @apply bg-[#2a475e] text-white rounded-lg shadow-md overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-[#66c0f4]/50;
 }
 
-/* 🔹 Price Highlight */
-.price {
-  @apply text-blue-400 font-bold text-lg;
+.game-card img {
+  @apply w-full h-48 object-cover;
 }
 
-/* 🔹 Buttons */
-.primary-button {
-  @apply bg-blue-500 hover:bg-blue-400 text-white font-semibold py-2 px-4 rounded transition-all duration-300;
+.game-card h3 {
+  @apply text-lg font-bold mt-2 px-4;
 }
 
-.secondary-button {
-  @apply bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded transition-all duration-300;
+.game-card p {
+  @apply text-sm text-gray-400 px-4;
+}
+
+.game-card .price {
+  @apply text-[#66c0f4] font-bold text-lg px-4;
 }
 
 /* 🔹 Game Details Page Styling */
 .game-details {
-  @apply bg-gray-800 p-8 rounded-lg shadow-lg max-w-3xl mx-auto text-white;
+  @apply bg-[#1b2838] p-8 rounded-lg shadow-lg max-w-6xl mx-auto text-white;
 }
 
 .game-details img {
-  @apply w-full h-64 object-cover rounded-lg;
+  @apply w-full h-96 object-cover rounded-lg;
 }
 
 .game-details h1 {
-  @apply text-3xl font-bold mt-4;
+  @apply text-4xl font-bold mt-4;
 }
 
 .game-details p {
@@ -55,12 +61,21 @@ body {
 }
 
 .game-details a {
-  @apply inline-block mt-6 text-blue-400 hover:underline;
+  @apply inline-block mt-6 text-[#66c0f4] hover:underline;
+}
+
+/* 🔹 Buttons */
+.primary-button {
+  @apply bg-[#66c0f4] hover:bg-[#4aa3d6] text-white font-semibold py-2 px-4 rounded transition-all duration-300;
+}
+
+.secondary-button {
+  @apply bg-[#2a475e] hover:bg-[#1b2838] text-white font-semibold py-2 px-4 rounded transition-all duration-300;
 }
 
 /* 🔹 Library Page Styling */
 .library-page {
-  @apply bg-gray-900 min-h-screen p-6;
+  @apply bg-[#1b2838] min-h-screen p-6;
 }
 
 .library-page h1 {
@@ -69,13 +84,4 @@ body {
 
 .library-grid {
   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6;
-}
-
-/* 🔹 Navbar Styling */
-.navbar {
-  @apply bg-gray-950 shadow-lg py-4;
-}
-
-.navbar a {
-  @apply text-white hover:text-blue-400 transition-all duration-300;
 }
